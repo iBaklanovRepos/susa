@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slideUpPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/slide_up_panel_background"
+    tools:context=".SlideUpPanel"
+    android:padding="20dp">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Спортивная многофункциональная площадка"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="textStart"
+        tools:ignore="RtlCompat" />
+    <Button
+        android:id="@+id/makeRouteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Построить маршрут"/>
+    <Button
+        android:id="@+id/objectInfoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Об объекте"/>
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Закрыть"/>
+
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SUSA</string>
+    <string name="i_m_sportsman">I\'m sportsman</string>
+    <string name="i_m_trainer">I\'m trainer</string>
+    <string name="title_activity_sportsman_map">Map</string>
+</resources>

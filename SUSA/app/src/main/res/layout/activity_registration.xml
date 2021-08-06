@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+    android:orientation="vertical"
+    android:id="@+id/registerLayout">
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Имя"
+            android:id="@+id/userName"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Адрес эл. почты"
+            android:id="@+id/email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пароль"
+            android:id="@+id/password"
+            android:inputType="textPassword"/>
+
+
+        <RadioGroup
+            android:id="@+id/registerRadioGroup"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioSportsman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Спортсмен"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/radioTrainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Тренер"/>
+            <RadioButton
+                android:id="@+id/radioReferee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Судья"/>
+            <RadioButton
+                android:id="@+id/radioMedic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Медик"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зарегистрироваться"
+            android:id="@+id/registration"
+            android:layout_marginTop="50dp"/>
+
+        <ProgressBar
+            android:id="@+id/registrProgressBar"
+            android:layout_marginTop="50dp"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>
